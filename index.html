@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Documents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="head">
+                <h1>Application For Permission To Date My Daughter</h1>
+                <p><b>Note:</b> <span class="color1">Form is to be completed at least 21 days prior to date</span></p>
+            </div>
+            <form action="#">
+                <fieldset class="details">
+                    <legend>Personal Details</legend>
+                    <label class="name" for="fname" >Name:</label>
+                    <input type="text" required autocomplete="on" placeholder="Enter name here"> <br>
+                    <label for="Address">Address:</label>
+                    <input type="text" placeholder="Enter address here"> <br>
+                    <label for="Email">Email: </label>
+                    <input type="email" required placeholder="Enter email here"> <br>
+                    <label for="pnumber">Phone Number:</label>
+                    <input class="pnumber" type="number" placeholder="Enter 11 digit number" min="1" max="11"> <br>
+                    <label for="">IQ:</label>
+                    <input type="number" placeholder="Enter IQ here" min="-100"><br>
+                    <label for="sex">Gender </label><br>
+                    <input type="radio" name="gender" value="Male" checked>
+                    <label for="male"> Male</label><br>
+                    <input type="radio" name="gender" value="Female">
+                    <label for="Female"> Female</label><br>
+                    <label for="date-label"> Date of Proposed Outing:</label>
+                    <input type="date" name="birthday">
+                </fieldset>
+            <!-- Fieldset containing the check box -->
+                <fieldset class="check">
+                  <p>Check All That Apply</p> 
+                  <label for="checkbox"><input type="checkbox"> I have tatoos and/or piercings</label><br>
+                  <label for="checkbox"><input type="checkbox">I am more than 2 years older than my daughter</label><br>
+                  <label for="checkbox"><input type="checkbox"> I own a panel van or Ute</label><br>
+                  <label for="checkbox"><input type="checkbox" checked>I work full-time</label><br>
+                  <label for="checkbox"> <input type="checkbox" checked>My parents are rich</label><br>
+                  <label for="checkbox"><input type="checkbox" checked> Is the date at a well lit public location</label>
+                </fieldset>
+            <!-- your politic position -->
+                <fieldset class="politics">
+                    <label for="wing">Political Persuasion:</label>
+                    <select name="wing" id="wing">
+                        <option value="Left Wing" selected> Left Wing</option>
+                        <option value="Right Wing">Right Wing</option>
+                        <option value="Conservative"> Conservative</option>
+                        <option value="naiz">Naiz</option>
+                    </select>
+                    <label for="level">Education Level Completed:</label>
+                     <select name="School" id="School">
+                         <option value="University" selected>University</option>
+                         <option value="College"> College </option>
+                         <option value="High School ">High School</option>
+                         <option value="None">None</option>
+                     </select>
+                </fieldset>
+            <!--To tell more about your Essay -->
+                <fieldset class="essay">
+                    <legend>Essay Section </legend>
+                    <p>In 50 words or more explain why you want to date my daughter</p>
+                    <textarea name="text" id="" cols="40" rows="5">Enter Text Here</textarea>
+                    <p> Please, upload contact details for two references</p>
+                    <textarea  name="text" id="" cols="40" rows="5">Enter Text Here</textarea>
+                    <p>Upload Police Clearance Certificate, Bank Statement and Medical Certificates here: 
+                       <br> <button class="file" href="#">Attach Files</button></p>
+                </fieldset>
+                <!-- -->
+                 <div class="submit">
+                     <button type="submit" restricted > Send Your Application</button>
+                 </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
